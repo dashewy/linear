@@ -263,7 +263,7 @@ class cipher():
             method_1 = self.ceaser_decode(message, offset=number, show=False)
             print(f'the message is {method_1} and offset is {number}')
                 
-    def affine_slayer(self, message, show=False):
+    def affine_breaker(self, message, show=False):
         
         for a in range(26):
             for n in range(26):
@@ -276,16 +276,3 @@ class cipher():
 
 
 
-cipher_test = cipher()
-# cipher_test.ceaser_encode('hello good friend', 10)
-# cipher_test.ceaser_decode('xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!', 10)
-# cipher_test.affine_encode('MATHEMATICS IS FUN',3 , 7)
-# cipher_test.affine_decode('JDGAFJDGHRZ HZ MNQ', 3, 8)
-
-# cipher_test.affine_decode("VA", 8, 5)
-# cipher_test.vigenre_encode('LEONTIEF MODEL', 'ABLE')
-# cipher_test.vigenre_decode('LFZRTJPJ MPOIL', 'ABLE')
-# cipher_test.brutus_breaker('xubbe weet vhyudt')
-
-# cipher_test.brutus_breaker('JAJJFYXJLLXNSYMJJAJSNSLA')
-cipher_test.affine_slayer('TTGFTMGTTJMTTR.MCTMTRAOTGTJMJ.TOQTGJMTJMJMTAJ.')

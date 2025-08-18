@@ -66,6 +66,3 @@ def matrix_to_image(matrix, color=True, show=True, save=False):
         
     return output_image
 
-
-slime = image_to_matrix('slime.jpg', color=False)
-slime_back = matrix_to_image(slime, color=False)
