@@ -1,2 +1,2 @@
 # Applications of Linear Algerbra
-## These are few scripts that I wrote alongside the homework to assist with the longer calculations
+## These are a few scripts that I wrote alongside homework problens to assist with longer calculations
