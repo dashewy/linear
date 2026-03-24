@@ -175,7 +175,7 @@ def blocker(word, block_size, show=True):
   return word_to_matrix
 
 
-def hill_scramber_key(size, show=True):
+def hill_scrambler_key(size, show=True):
   
   lower = list(alpha_num_dict())
   
@@ -222,7 +222,7 @@ def stream_scambeler(length=16, show=True):
 # keep this to test hill cipher
 
 # E = blocker('hillcipher', 3)
-# hill_scramber_key(3)
+# hill_scrambler_key(3)
 # Y = blocker('hfzcljljvbpugnng', 4)
 # M = numpy_array(3, 4, 5, 2, 1, 3, 2, 5, 13, 2, 5, 19, 7, 8, 2, 15, shape=(4, 4))
 

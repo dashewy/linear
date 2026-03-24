@@ -1,4 +1,4 @@
-from supplemental_functions import blocker, hill_scramber_key
+from supplemental_functions import blocker, hill_scrambler_key
 from supplemental_functions import stream_scambeler,  alpha_bin_dict, bin_alpha_dict
 
 class cipher():
@@ -263,7 +263,7 @@ class cipher():
     def hill(self, message, key, size):
         
         message = blocker(message, size, show=False)    
-        key = hill_scramber_key(size, show=False)
+        key = hill_scrambler_key(size, show=False)
         
         
     def streamer(self, message, encrypt=True, show=True):
