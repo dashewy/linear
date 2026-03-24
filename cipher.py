@@ -1,3 +1,5 @@
+from supplemental_functions import blocker, hill_scramber_key
+from supplemental_functions import stream_scambeler,  alpha_bin_dict, bin_alpha_dict
 
 class cipher():
     # may be used in later versions
@@ -257,13 +259,43 @@ class cipher():
         
         return(updated_string)
     
-    def brutus_breaker(self, message, show=True):
+    
+    def hill(self, message, key, size):
+        
+        message = blocker(message, size, show=False)    
+        key = hill_scramber_key(size, show=False)
+        
+        
+    def streamer(self, message, encrypt=True, show=True):
+        bin_dict = alpha_bin_dict()
+        if encrypt is True:
+            tokenize = message.split()
+            letters = []
+            
+            for word in tokenize:
+                for letter in word:
+                    letters.append(letter)
+                    
+            binary_rep = []
+            for letter in letters:
+                pass
+                
+            
+            
+        if show is True:
+            print(tokenize)
+            print(letters)
+            # print(bin_dict)
+            # print(binary_rep)
+
+    
+    def brutus_breaker(self, message):
         
         for number in range(26):
             method_1 = self.ceaser_decode(message, offset=number, show=False)
             print(f'the message is {method_1} and offset is {number}')
                 
-    def affine_breaker(self, message, show=False):
+    def affine_breaker(self, message):
         
         for a in range(26):
             for n in range(26):
@@ -275,4 +307,9 @@ class cipher():
 
 
 
+cipher_test = cipher()
+# cipher_test.affine_decode('TTGFTMGTTJMTTR.MCTMTRAOTGTJMJ.TOQTGJMTJMJMTAJ.', 15, 9)
+# cipher_test.affine_decode('wben', 4, 9)
 
+# cipher_test.affine_breaker('IXCEHRI AQ VEIP')
+cipher_test.streamer('hello world')

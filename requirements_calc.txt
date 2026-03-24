@@ -1,0 +1,5 @@
+numpy ; platform.machine == 'arm64'
+matplotlib ; platform.machine == 'arm64'
+Pillow ; platform.machine == 'arm64'
+
+
